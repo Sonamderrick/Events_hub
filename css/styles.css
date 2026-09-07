@@ -1,0 +1,373 @@
+/* Basic page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Heading */
+
+h2 {
+    color: #003366;
+}
+
+/* Campus image */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Links */
+
+main a {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* Simple selectors */
+
+h1 {
+    color: #0f172a;
+}
+
+.intro {
+    background: #f8fafc;
+}
+
+#welcome {
+    padding: 24px;
+}
+
+p.intro {
+    font-size: 1.05rem;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+/* Combinator selectors */
+
+nav a {
+    text-decoration: none;
+}
+
+main > section {
+    margin-bottom: 24px;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+h2 ~ p {
+    color: #334155;
+}
+
+/* Pseudo-class selectors */
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+input:focus {
+    outline: 2px solid #0369a1;
+}
+
+input:checked + label {
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+/* Anchor LVHA order */
+
+a:link {
+    color: #0369a1;
+}
+
+a:visited {
+    color: #7c3aed;
+}
+
+a:hover {
+    color: #ea580c;
+}
+
+a:active {
+    color: #b91c1c;
+}
+/* Pseudo-elements */
+
+p::first-line {
+    font-weight: bold;
+}
+
+.intro::first-letter {
+    font-size: 1.6em;
+    color: #0369a1;
+}
+
+h2::before {
+    content: "★ ";
+    color: #0977a6;
+}
+
+li::marker {
+    color: #0369a1;
+}
+
+::selection {
+    color: #ffffff;
+    background: #0369a1;
+}
+/* Attribute selectors */
+
+input[type] {
+    border: 2px solid #0369a1;
+}
+
+input[type="text"] {
+    background-color: #f8fafc;
+}
+
+input[type="email"] {
+    background-color: #f0fdf4;
+}
+
+a[target="_blank"] {
+    text-decoration: underline;
+}
+/* Part C - Text formatting & colour */
+
+/* Font family */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Heading font */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* Text size and line height */
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* First-line indentation */
+p.intro {
+    text-indent: 2em;
+}
+
+/* Text decoration */
+main a {
+    text-decoration: underline;
+}
+
+/* Strikethrough text */
+del {
+    text-decoration: line-through;
+}
+
+/* Text colours */
+h2 {
+    color: #0369a1;
+}
+
+p {
+    color: rgb(30, 41, 59);
+}
+
+/* Register link */
+main a {
+    color: crimson;
+    font-weight: bold;
+}
+/* Fix header text after Part C */
+
+header h1 {
+    color: white;
+}
+
+header nav a {
+    color: white;
+}
+/* C3 — Indent, align, decorate */
+
+.intro p {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.sold-out {
+    text-decoration: line-through;
+}
+
+/* C4 — Colours: named, hex, RGB */
+
+/* RGB colour */
+body {
+    color: rgb(30, 41, 59);
+}
+
+/* Hexadecimal colour */
+h2 {
+    color: #0369a1;
+}
+
+/* Named colour */
+.highlight {
+    color: crimson;
+}
+
+/* Header colour */
+header {
+    background-color: #0f172a;
+}
+/* Part D — Margin & Padding (Box Model) */
+
+.intro {
+    margin: 24px 16px 32px 16px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    background: white;
+}
+
+section {
+    margin-bottom: 28px;
+    padding-left: 8px;
+}
+/* Part E — Display properties */
+
+/* Block elements */
+header,
+main,
+section,
+footer {
+    display: block;
+}
+
+/* Inline elements */
+nav a {
+    display: inline;
+}
+
+/* Inline-block navigation links */
+nav a {
+    display: inline-block;
+}
+
+/* Hide admin-only content */
+.admin-only {
+    display: none;
+}
+
+/* Visibility hidden */
+.hidden {
+    visibility: hidden;
+}
+
+/* Flex container */
+.event-card {
+    display: flex;
+}
+/* Part E — Display properties */
+
+header,
+main,
+section,
+footer {
+    display: block;
+}
+
+nav a {
+    display: inline-block;
+}
+
+.admin-only {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+/* Part F — Responsive Design */
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 4px 0;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
